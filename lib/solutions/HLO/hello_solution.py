@@ -4,4 +4,4 @@
 # friend_name = unicode string
 def hello(friend_name):
     print(friend_name)
-hello('John Smith')
+hello('Hello John Smith')
