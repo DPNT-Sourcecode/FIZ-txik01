@@ -11,7 +11,8 @@ def same_dig(number):
             return False
     except:
         return False
-        
+
+print(same_dig(11))
 
 def fizz_buzz(number):
     if (number%3==0 or '3' in str(number)) and (number%5 == 0 or '5' in str(number)) and (number>10 and same_dig(number)==True and number % 2 == 0):
@@ -34,8 +35,10 @@ def fizz_buzz(number):
         return "fizz"
     elif (number>10 and same_dig(number)==True and number%2 == 0):
         return "deluxe"
-	elif (number>10 and same_dig(number)==True and number%2 != 0):
-            return "fake deluxe"
+	if (number>10 and same_dig(number)==True and number%2 != 0):
+        return "fake deluxe"
     else:
         return number
 
+
+print(fizz_buzz(11))
