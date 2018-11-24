@@ -36,6 +36,7 @@ from runner.user_input_action import get_user_input
     |  2.  | Start a challenge by typing "start".                        |
     |  3.  | Read description from the "challenges" folder               |
     |  4.  | Implement the required method in                            |
+    
     |      |   ./lib/solutions                                           |
     |  5.  | Deploy to production by typing "deploy".                    |
     |  6.  | Observe output, check for failed requests.                  |
