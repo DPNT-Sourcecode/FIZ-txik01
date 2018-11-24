@@ -7,6 +7,7 @@ def same_dig(number):
 		return True
 	else:
 		return False
+        print(len(str(number))
 
 
 def fizz_buzz(number):
