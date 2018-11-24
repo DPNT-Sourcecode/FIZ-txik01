@@ -5,4 +5,5 @@
 def hello(friend_name):
     return "Hello, " + friend_name + "!"
 
-print(hello("World"))
+req = hello("World")
+print(req)
