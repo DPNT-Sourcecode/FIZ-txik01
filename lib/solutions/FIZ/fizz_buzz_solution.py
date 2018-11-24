@@ -3,14 +3,12 @@ import collections
 
 def same_dig(number):	
  	countOfWords = collections.Counter(str(number))
-
- 	if str(len(str(number)))==[countOfWords[i](0) for i in countOfWords if countOfWords[i]>1]:
-		return True
-	else:
-		return False
+        result = [countOfWords[i] for i in countOfWords if countOfWords[i]>1]
+        if len(str(number))==result[0]:
+            return True
+        else:
+            return False
         
-
-print(same_dig(11))
 
 def fizz_buzz(number):
     if (number%3==0 or '3' in str(number)) and (number%5 == 0 or '5' in str(number)) and (number>10 and same_dig(number)==True):
@@ -25,6 +23,3 @@ def fizz_buzz(number):
         return "fizz"
     else:
         return number
-
-
-print(fizz_buzz(11))
