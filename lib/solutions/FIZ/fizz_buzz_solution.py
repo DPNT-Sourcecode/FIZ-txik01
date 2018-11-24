@@ -2,12 +2,15 @@
 import collections
 
 def same_dig(number):	
- 	countOfWords = collections.Counter(str(number))
+    try:
+        countOfWords = collections.Counter(str(number))
         result = [countOfWords[i] for i in countOfWords if countOfWords[i]>1]
         if len(str(number))==result[0]:
             return True
         else:
             return False
+    except:
+        return False
         
 
 def fizz_buzz(number):
