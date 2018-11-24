@@ -6,6 +6,7 @@ def same_dig(number):
  	if str(len(str(number)))==[str(countOfWords[i]) for i in countOfWords if countOfWords[i]>1]:
 		return True
 	else:
+        print(str(len(str(number))))
 		return False
         
 
