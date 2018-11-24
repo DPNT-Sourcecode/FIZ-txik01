@@ -3,8 +3,7 @@ import collections
 
 def same_dig(number):	
  	countOfWords = collections.Counter(str(number))
-     result = [str(countOfWords[i]) for i in countOfWords if countOfWords[i]>1]
- 	if str(len(str(number)))== result[0]:
+ 	if str(len(str(number)))== [countOfWords[i] for i in countOfWords if countOfWords[i]>1]:
 		return True
 	else:
 		return False
