@@ -21,3 +21,5 @@ def fizz_buzz(number):
         return "fizz"
     else:
         return number
+
+    print(fizz_buzz(3))
